@@ -1,3 +1,9 @@
-<p>
-  all-project-panel works!
-</p>
+
+
+  <div *ngFor='let project of projects'>
+    {{ project.name }}
+    <div *ngFor='let sound of project.sounds'>
+      {{ sound.name }}
+    </div>
+  </div>
+

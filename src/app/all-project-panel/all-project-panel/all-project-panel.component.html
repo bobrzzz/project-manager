@@ -1,6 +1,8 @@
 
 
-  <div *ngFor='let project of projects'>
+  <div *ngFor='let project of projects'
+    class='all__item'
+  >
     {{ project.name }}
     <div *ngFor='let sound of project.sounds'>
       {{ sound.name }}

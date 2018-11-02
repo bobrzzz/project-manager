@@ -7,5 +7,11 @@
     <div *ngFor='let sound of project.sounds'>
       {{ sound.name }}
     </div>
+    <form action="http://localhost:3000/sound" method="post" enctype="multipart/form-data">
+      <input type="file" name="avatar" />
+      <input type="submit">
+    </form>
+    <input type="file" (change)="selectFile($event)" placeholder="Upload file" accept=".pdf,.doc,.docx">
+
   </div>
 
